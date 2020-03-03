@@ -1,21 +1,21 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Plugin\Mail;
+namespace Lof\SmtpApp\Plugin\Mail;
 
 use Closure;
 use Magento\Framework\Exception\MailException;
 use Magento\Framework\Mail\Message;
 use Magento\Framework\Mail\TransportInterface;
-use MagePal\GmailSmtpApp\Helper\Data;
-use MagePal\GmailSmtpApp\Model\Store;
-use MagePal\GmailSmtpApp\Model\ZendMailOne\Smtp as ZendMailOneSmtp;
-use MagePal\GmailSmtpApp\Model\ZendMailTwo\Smtp as ZendMailTwoSmtp;
-use MagePal\GmailSmtpApp\Model\TwoDotThree\Smtp as TwoDotThreeSmtp;
+use Lof\SmtpApp\Helper\Data;
+use Lof\SmtpApp\Model\Store;
+use Lof\SmtpApp\Model\ZendMailOne\Smtp as ZendMailOneSmtp;
+use Lof\SmtpApp\Model\ZendMailTwo\Smtp as ZendMailTwoSmtp;
+use Lof\SmtpApp\Model\TwoDotThree\Smtp as TwoDotThreeSmtp;
 use Zend_Mail;
 use Zend_Mail_Exception;
 use Zend_Mail_Transport_Smtp;
@@ -23,7 +23,7 @@ use \Magento\Framework\Mail\EmailMessageInterface;
 
 /**
  * Class TransportPlugin
- * @package MagePal\GmailSmtpApp\Plugin\Mail
+ * @package Lof\SmtpApp\Plugin\Mail
  */
 class TransportPlugin extends Zend_Mail_Transport_Smtp
 {

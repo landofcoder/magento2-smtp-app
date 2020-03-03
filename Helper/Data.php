@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Helper;
+namespace Lof\SmtpApp\Helper;
 
 use Magento\Framework\App\Helper\AbstractHelper;
 use Magento\Store\Model\ScopeInterface;
@@ -59,7 +59,7 @@ class Data extends AbstractHelper
         }
 
         return $this->scopeConfig->isSetFlag(
-            'system/gmailsmtpapp/active',
+            'system/smtpapp/active',
             ScopeInterface::SCOPE_STORE,
             $store_id
         );
@@ -213,7 +213,7 @@ class Data extends AbstractHelper
 
         //return value from core config
         return $this->getScopeConfigValue(
-            "system/gmailsmtpapp/{$path}",
+            "system/smtpapp/{$path}",
             $store_id
         );
     }

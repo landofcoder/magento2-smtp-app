@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
 */
 
-namespace MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Module;
+namespace Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Module;
 
 use Magento\Backend\Block\Template\Context;
 use Magento\Config\Block\System\Config\Form\Field;
@@ -15,7 +15,7 @@ use Magento\Framework\Module\ModuleListInterface;
 
 /**
  * Class Version
- * @package MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Module
+ * @package Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Module
  */
 class Version extends Field
 {

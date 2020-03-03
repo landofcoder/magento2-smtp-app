@@ -1,18 +1,18 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Block\Adminhtml;
+namespace Lof\SmtpApp\Block\Adminhtml;
 
 use Exception;
 use Magento\Backend\Block\Template;
 use Magento\Backend\Block\Template\Context;
 use Magento\Framework\Validator\EmailAddress;
-use MagePal\GmailSmtpApp\Helper\Data;
-use MagePal\GmailSmtpApp\Model\Email;
+use Lof\SmtpApp\Helper\Data;
+use Lof\SmtpApp\Model\Email;
 use Zend_Mail;
 use Zend_Mail_Exception;
 use Zend_Mail_Transport_Smtp;
@@ -21,7 +21,7 @@ use Zend_Validate_Exception;
 
 /**
  * Class EmailTest
- * @package MagePal\GmailSmtpApp\Block\Adminhtml
+ * @package Lof\SmtpApp\Block\Adminhtml
  */
 class EmailTest extends Template
 {
@@ -290,11 +290,11 @@ class EmailTest extends Template
         $this->fromAddress = $from;
 
         //Create email
-        $name = 'Test from MagePal SMTP';
+        $name = 'Test from Landofcoder SMTP';
         $mail = new Zend_Mail();
         $mail->setFrom($this->fromAddress, $name);
         $mail->addTo($this->toAddress, $this->toAddress);
-        $mail->setSubject('Hello from MagePal SMTP (1 of 2)');
+        $mail->setSubject('Hello from Landofcoder SMTP (1 of 2)');
 
         $htmlBody = $this->_email->setTemplateVars(['hash' => $this->hash])->getEmailBody();
 
@@ -328,7 +328,7 @@ class EmailTest extends Template
             $this->_email
                 ->setTemplateVars(['hash' => $this->hash])
                 ->send(
-                    ['email' => $this->fromAddress, 'name' => 'Test from MagePal SMTP'],
+                    ['email' => $this->fromAddress, 'name' => 'Test from Landofcoder SMTP'],
                     ['email' => $this->toAddress, 'name' => $this->toAddress]
                 );
         } catch (Exception $e) {

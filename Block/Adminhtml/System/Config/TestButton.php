@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Block\Adminhtml\System\Config;
+namespace Lof\SmtpApp\Block\Adminhtml\System\Config;
 
 use Magento\Backend\Block\Template\Context;
 use Magento\Backend\Block\Widget\Button;
@@ -42,7 +42,7 @@ class TestButton extends Field
     protected function _construct()
     {
         parent::_construct();
-        $this->setTemplate('MagePal_GmailSmtpApp::system/config/testbutton.phtml');
+        $this->setTemplate('Lof_SmtpApp::system/config/testbutton.phtml');
     }
 
     /**
@@ -57,9 +57,9 @@ class TestButton extends Field
             Button::class
         )->setData(
             [
-                'id' => 'gmailsmtpapp_debug_result_button',
+                'id' => 'smtpapp_debug_result_button',
                 'label' => __('Send Test Email'),
-                'onclick' => 'javascript:gmailSmtpAppDebugTest(); return false;',
+                'onclick' => 'javascript:SmtpAppDebugTest(); return false;',
             ]
         );
 
@@ -69,7 +69,7 @@ class TestButton extends Field
     public function getAdminUrl()
     {
         return $this->_urlBuilder->getUrl(
-            'magepalsmtp/testemail',
+            'lofsmtp/testemail',
             ['store' => $this->_request->getParam('store')]
         );
     }

@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Composer;
+namespace Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Composer;
 
 use Exception;
 use Magento\Backend\Block\Template\Context;

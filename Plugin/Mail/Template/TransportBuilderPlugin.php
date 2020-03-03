@@ -1,18 +1,18 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Plugin\Mail\Template;
+namespace Lof\SmtpApp\Plugin\Mail\Template;
 
 use Magento\Framework\Mail\Template\TransportBuilder;
-use MagePal\GmailSmtpApp\Model\Store;
+use Lof\SmtpApp\Model\Store;
 
 /**
  * Class TransportBuilderPlugin
- * @package MagePal\GmailSmtpApp\Plugin\Mail\Template
+ * @package Lof\SmtpApp\Plugin\Mail\Template
  */
 class TransportBuilderPlugin
 {

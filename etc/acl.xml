@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <!--
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
@@ -13,7 +13,7 @@
 				<resource id="Magento_Backend::stores">
 					<resource id="Magento_Backend::stores_settings">
 						<resource id="Magento_Config::config">
-							<resource id="MagePal_GmailSmtpApp::magepal_gmailsmtpapp" title="MagePal SMTP App"/>
+							<resource id="Lof_SmtpApp::lof_smtpapp" title="Landofcoder SMTP App"/>
 						</resource>
 					</resource>
 				</resource>

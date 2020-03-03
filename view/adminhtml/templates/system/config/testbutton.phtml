@@ -1,12 +1,12 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
 /**
- * @var $block MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\TestButton
+ * @var $block Lof\SmtpApp\Block\Adminhtml\System\Config\TestButton
  */
 ?>
 
@@ -15,15 +15,15 @@
         'jquery',
         'Magento_Ui/js/modal/alert'
     ], function ($, alert) {
-        window.gmailSmtpAppDebugTest = function(){
+        window.SmtpAppDebugTest = function(){
             var postData = {form_key: FORM_KEY};
 
             //global var configForm
-            configForm.find('[id^=system_gmailsmtpapp]').find(':input').serializeArray().map(function(field){
-                var name = field.name.match(/groups\[gmailsmtpapp\]?(\[groups\]\[debug\])?\[fields\]\[(.*)\]\[value]/);
+            configForm.find('[id^=system_smtpapp]').find(':input').serializeArray().map(function(field){
+                var name = field.name.match(/groups\[smtpapp\]?(\[groups\]\[debug\])?\[fields\]\[(.*)\]\[value]/);
 
-                //groups[gmailsmtpapp][groups][debug][fields][email][value]
-                //groups[gmailsmtpapp][fields][password][value]
+                //groups[smtpapp][groups][debug][fields][email][value]
+                //groups[smtpapp][fields][password][value]
 
                 if(name && name.length == 3){
                     postData[name[2]] = field.value;

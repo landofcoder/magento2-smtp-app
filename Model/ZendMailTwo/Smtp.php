@@ -1,18 +1,18 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Model\ZendMailTwo;
+namespace Lof\SmtpApp\Model\ZendMailTwo;
 
 use Exception;
 use Magento\Framework\Exception\MailException;
 use Magento\Framework\Mail\MessageInterface;
 use Magento\Framework\Phrase;
-use MagePal\GmailSmtpApp\Helper\Data;
-use MagePal\GmailSmtpApp\Model\Store;
+use Lof\SmtpApp\Helper\Data;
+use Lof\SmtpApp\Model\Store;
 use Zend\Mail\AddressList;
 use Zend\Mail\Message;
 use Zend\Mail\Transport\Smtp as SmtpTransport;
@@ -21,7 +21,7 @@ use Zend\Mail\Transport\SmtpOptions;
 /**
  * Class Smtp
  * For Magento > 2.2.7
- * @package MagePal\GmailSmtpApp\Model\ZendMailTwo
+ * @package Lof\SmtpApp\Model\ZendMailTwo
  */
 
 class Smtp
