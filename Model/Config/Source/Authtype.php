@@ -1,16 +1,16 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
-namespace MagePal\GmailSmtpApp\Model\Config\Source;
+namespace Lof\SmtpApp\Model\Config\Source;
 
 use Magento\Framework\Option\ArrayInterface;
 
 /**
  * Class Authtype
- * @package MagePal\GmailSmtpApp\Model\Config\Source
+ * @package Lof\SmtpApp\Model\Config\Source
  */
 class Authtype implements ArrayInterface
 {

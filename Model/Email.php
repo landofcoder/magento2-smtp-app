@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Model;
+namespace Lof\SmtpApp\Model;
 
 use Magento\Framework\App\Area;
 use Magento\Framework\App\Config\ScopeConfigInterface;
@@ -19,17 +19,17 @@ use Magento\Framework\Translate\Inline\StateInterface;
 use Magento\Store\Api\Data\StoreInterface;
 use Magento\Store\Model\ScopeInterface;
 use Magento\Store\Model\StoreManagerInterface;
-use MagePal\GmailSmtpApp\Helper\Data;
+use Lof\SmtpApp\Helper\Data;
 
 /**
  * Class Email
- * @package MagePal\GmailSmtpApp\Model
+ * @package Lof\SmtpApp\Model
  */
 class Email
 {
-    const XML_PATH_EMAIL_TEMPLATE_ZEND_TEST  = 'system/gmailsmtpapp/zend_email_template';
+    const XML_PATH_EMAIL_TEMPLATE_ZEND_TEST  = 'system/smtpapp/zend_email_template';
 
-    const XML_PATH_EMAIL_TEMPLATE_MAGENTO_TEST  = 'system/gmailsmtpapp/magento_email_template';
+    const XML_PATH_EMAIL_TEMPLATE_MAGENTO_TEST  = 'system/smtpapp/magento_email_template';
 
     /**
      * @var ScopeConfigInterface

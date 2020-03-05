@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Field;
+namespace Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Field;
 
 use Magento\Backend\Block\Template\Context;
 use Magento\Config\Block\System\Config\Form\Field;
@@ -13,7 +13,7 @@ use Magento\Framework\Data\Form\Element\AbstractElement;
 
 /**
  * Class Link
- * @package MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Field
+ * @package Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Field
  */
 class Link extends Field
 {
@@ -52,7 +52,7 @@ class Link extends Field
     protected function _getElementHtml(AbstractElement $element)
     {
         return sprintf(
-            '<a href ="%s#system_gmailsmtpapp-link">%s</a>',
+            '<a href ="%s#system_smtpapp-link">%s</a>',
             rtrim($this->_urlBuilder->getUrl('adminhtml/system_config/edit/section/system'), '/'),
             __('Stores > Configuration > Advanced > System > SMTP Configuration and Settings')
         );

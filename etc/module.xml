@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="MagePal_GmailSmtpApp" setup_version="1.5.1">
+    <module name="Lof_SmtpApp" setup_version="1.5.1">
         <sequence>
             <module name="Magento_Email"/>
         </sequence>

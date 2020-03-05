@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="admin">
-        <route id="magepalSmtp" frontName="magepalsmtp">
-            <module name="MagePal_GmailSmtpApp" before="Magento_Backend" />
+        <route id="lofSmtp" frontName="lofsmtp">
+            <module name="Lof_SmtpApp" before="Magento_Backend" />
         </route>
     </router>
 </config>

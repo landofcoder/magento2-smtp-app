@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Model;
+namespace Lof\SmtpApp\Model;
 
 use Exception;
 use InvalidArgumentException;
@@ -18,7 +18,7 @@ use Zend_Mail_Transport_Sendmail;
 
 /**
  * Class Transport
- * @package MagePal\GmailSmtpApp\Model
+ * @package Lof\SmtpApp\Model
  */
 class Transport extends Zend_Mail_Transport_Sendmail implements TransportInterface
 {

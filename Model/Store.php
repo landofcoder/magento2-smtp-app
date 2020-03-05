@@ -1,15 +1,15 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Model;
+namespace Lof\SmtpApp\Model;
 
 /**
  * Class Store
- * @package MagePal\GmailSmtpApp\Model
+ * @package Lof\SmtpApp\Model
  */
 class Store
 {

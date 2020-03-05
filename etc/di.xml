@@ -1,30 +1,30 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
 	<!-- For Magento < 2.2 -->
-	<preference for="\Magento\Framework\Mail\Transport" type="MagePal\GmailSmtpApp\Model\Transport"/>
-	<type name="MagePal\GmailSmtpApp\Model\Transport">
-		<plugin sortOrder="100" name="magePalGmailSmtpAppTransport" type="MagePal\GmailSmtpApp\Plugin\Mail\TransportPlugin"/>
+	<preference for="\Magento\Framework\Mail\Transport" type="Lof\SmtpApp\Model\Transport"/>
+	<type name="Lof\SmtpApp\Model\Transport">
+		<plugin sortOrder="100" name="landofcoderSmtpAppTransport" type="Lof\SmtpApp\Plugin\Mail\TransportPlugin"/>
 	</type>
 
 	<!-- For Magento Eq 2.2 -->
 	<type name="\Magento\Framework\Mail\TransportInterface">
-		<plugin sortOrder="100" name="magePalGmailSmtpAppTransportInterface" type="MagePal\GmailSmtpApp\Plugin\Mail\TransportPlugin"/>
+		<plugin sortOrder="100" name="landofcoderSmtpAppTransportInterface" type="Lof\SmtpApp\Plugin\Mail\TransportPlugin"/>
 	</type>
 
 	<type name="Magento\Framework\Mail\Template\TransportBuilder">
-		<plugin sortOrder="1" name="magePalGmailSmtpAppTransportBuilder"
-				type="MagePal\GmailSmtpApp\Plugin\Mail\Template\TransportBuilderPlugin"/>
+		<plugin sortOrder="1" name="landofcoderSmtpAppTransportBuilder"
+				type="Lof\SmtpApp\Plugin\Mail\Template\TransportBuilderPlugin"/>
 	</type>
 
     <type name="Magento\Framework\Mail\Template\TransportBuilderByStore">
-        <plugin sortOrder="1" name="magePalGmailSmtpAppTransportBuilderByStore"
-                type="MagePal\GmailSmtpApp\Plugin\Mail\Template\TransportBuilderByStorePlugin"/>
+        <plugin sortOrder="1" name="landofcoderSmtpAppTransportBuilderByStore"
+                type="Lof\SmtpApp\Plugin\Mail\Template\TransportBuilderByStorePlugin"/>
     </type>
 </config>

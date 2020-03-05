@@ -1,40 +1,40 @@
 <?xml version="1.0"?>
 <!--
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * https://www.magepal.com | support@magepal.com
+ * https://www.landofcoder.com | support@landofcoder.com
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="magepal" sortOrder="400" translate="label">
-            <label>MagePal</label>
+        <tab id="landofcoder" sortOrder="400" translate="label">
+            <label>Landofcoder</label>
         </tab>
-        <section id="magepal_gmailsmtpapp" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label">
+        <section id="lof_smtpapp" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="5" translate="label">
             <label>SMTP Configuration</label>
-            <tab>magepal</tab>
-            <resource>MagePal_GmailSmtpApp::magepal_gmailsmtpapp</resource>
+            <tab>landofcoder</tab>
+            <resource>Lof_SmtpApp::lof_smtpapp</resource>
             <group id="about" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="0" translate="label">
                 <attribute type="expanded">1</attribute>
-                <label>About MagePal SMTP</label>
+                <label>About Landofcoder SMTP</label>
                 <comment>
                     <![CDATA[
-                    <div id="magepal-info">
-                        Copyright © 2020 <a href="https://www.magepal.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">MagePal, LLC</a>
-                        <a href="https://www.magepal.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#documentation" target="_blank">Documentation</a>
-                        <a href="https://www.magepal.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#support">Support</a>
-                        <a href="https://www.magepal.com/help/docs/smtp-magento?utm_source=smtp&utm_medium=admin#current_version" target="_blank">Latest Version</a>
-                        <a href="https://www.magepal.com/custom-smtp.html?utm_source=smtp&utm_medium=admin" target="_blank">Extension Detail</a>
-                        <a href="https://www.magepal.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">More Extensions</a>
+                    <div id="landofcoder-info">
+                        Copyright © 2020 <a href="https://www.landofcoder.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">Landofcoder, LLC</a>
+                        <a href="https://www.landofcoder.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#documentation" target="_blank">Documentation</a>
+                        <a href="https://www.landofcoder.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#support">Support</a>
+                        <a href="https://www.landofcoder.com/help/docs/smtp-magento?utm_source=smtp&utm_medium=admin#current_version" target="_blank">Latest Version</a>
+                        <a href="https://www.landofcoder.com/custom-smtp.html?utm_source=smtp&utm_medium=admin" target="_blank">Extension Detail</a>
+                        <a href="https://www.landofcoder.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">More Extensions</a>
                     </div>
-                    <div id="magepal-promo">
+                    <div id="landofcoder-promo">
                         Get more from your order confirmation emails by promoting other complementary products!
                         Learn more about our new <a href="http://bit.ly/smtp-esp" target="_blank">Enhanced Transactional Email</a> extension.
                     </div>
                     <hr style="border-top: 1px solid #e3e3e3" />
                     <style>
-                        #magepal-info a {
+                        #landofcoder-info a {
                             font-weight: bold;
                             border-left: 2px solid #e3e3e3;
                             padding-left:10px;
@@ -42,16 +42,16 @@
                             color: #ef7e1e;
                         }
 
-                        #magepal-info a:first-child {
+                        #landofcoder-info a:first-child {
                             padding-left: 5px;
                             border-left: none;
                         }
 
-                        #magepal-info {
+                        #landofcoder-info {
                             padding-bottom: 5px;
                         }
 
-                        .section-config.active #magepal_gmailsmtpapp_about-head {
+                        .section-config.active #lof_smtpapp_about-head {
                             padding-bottom: 0px;
                         }
                      </style>
@@ -59,34 +59,34 @@
                 </comment>
                 <field id="composer_version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Composer Version</label>
-                    <frontend_model>MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
+                    <frontend_model>Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
                 </field>
                 <field id="link" translate="label" type="label" sortOrder="2" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Configuration</label>
-                    <frontend_model>MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Field\Link</frontend_model>
+                    <frontend_model>Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Field\Link</frontend_model>
                 </field>
             </group>
         </section>
         <section id="system">
-            <group id="gmailsmtpapp" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="smtpapp" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>SMTP Configuration and Settings (Gmail/Google/AWS/Office360 etc)</label>
                 <comment>
                   <![CDATA[
-                    <div id="magepal-info">
-                        Copyright © 2020 <a href="https://www.magepal.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">MagePal, LLC</a>
-                        <a href="https://www.magepal.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#documentation" target="_blank">Documentation</a>
-                        <a href="https://www.magepal.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#support">Support</a>
-                        <a href="https://www.magepal.com/help/docs/smtp-magento?utm_source=smtp&utm_medium=admin#current_version" target="_blank">Latest Version</a>
-                        <a href="https://www.magepal.com/custom-smtp.html?utm_source=smtp&utm_medium=admin" target="_blank">Extension Detail</a>
-                        <a href="https://www.magepal.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">More Extensions</a>
+                    <div id="landofcoder-info">
+                        Copyright © 2020 <a href="https://www.landofcoder.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">Landofcoder, LLC</a>
+                        <a href="https://www.landofcoder.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#documentation" target="_blank">Documentation</a>
+                        <a href="https://www.landofcoder.com/help/docs/smtp-magento/?utm_source=smtp&utm_medium=admin#support">Support</a>
+                        <a href="https://www.landofcoder.com/help/docs/smtp-magento?utm_source=smtp&utm_medium=admin#current_version" target="_blank">Latest Version</a>
+                        <a href="https://www.landofcoder.com/custom-smtp.html?utm_source=smtp&utm_medium=admin" target="_blank">Extension Detail</a>
+                        <a href="https://www.landofcoder.com/magento2/extensions.html?utm_source=smtp&utm_medium=admin" target="_blank">More Extensions</a>
                     </div>
-                    <div id="magepal-promo">
+                    <div id="landofcoder-promo">
                         Get more from your order confirmation emails by promoting other complementary products!
                         Learn more about our new <a href="http://bit.ly/smtp-esp" target="_blank">Enhanced Transactional Email</a> extension.
                     </div>
                     <hr style="border-top: 1px solid #e3e3e3" />
                     <style>
-                        #magepal-info a {
+                        #landofcoder-info a {
                             font-weight: bold;
                             border-left: 2px solid #e3e3e3;
                             padding-left:10px;
@@ -94,16 +94,16 @@
                             color: #ef7e1e;
                         }
 
-                        #magepal-info a:first-child {
+                        #landofcoder-info a:first-child {
                             padding-left: 5px;
                             border-left: none;
                         }
 
-                        #magepal-info {
+                        #landofcoder-info {
                             padding-bottom: 5px;
                         }
 
-                        .section-config.active #system_gmailsmtpapp-head {
+                        .section-config.active #system_smtpapp-head {
                             padding-bottom: 0px;
                         }
                      </style>
@@ -112,7 +112,7 @@
 
                 <field id="version" translate="label" type="label" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
                     <label>Version</label>
-                    <frontend_model>MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
+                    <frontend_model>Lof\SmtpApp\Block\Adminhtml\System\Config\Form\Composer\Version</frontend_model>
                 </field>
                 <field id="active" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Enable</label>
@@ -135,7 +135,7 @@
                 </field>
                 <field id="ssl" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>SSL type</label>
-                    <source_model>MagePal\GmailSmtpApp\Model\Config\Source\Authtype</source_model>
+                    <source_model>Lof\SmtpApp\Model\Config\Source\Authtype</source_model>
                     <comment>Default: ssl</comment>
                     <depends>
                         <field id="*/*/active">1</field>
@@ -230,7 +230,7 @@
                         <frontend_class>validate-email</frontend_class>
                     </field>
                     <field id="button" translate="label comment" type="button" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
-                        <frontend_model>MagePal\GmailSmtpApp\Block\Adminhtml\System\Config\TestButton</frontend_model>
+                        <frontend_model>Lof\SmtpApp\Block\Adminhtml\System\Config\TestButton</frontend_model>
                     </field>
                 </group>
             </group>

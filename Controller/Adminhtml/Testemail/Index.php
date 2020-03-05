@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * http://www.magepal.com | support@magepal.com
+ * http://www.landofcoder.com | support@landofcoder.com
  */
 
-namespace MagePal\GmailSmtpApp\Controller\Adminhtml\Testemail;
+namespace Lof\SmtpApp\Controller\Adminhtml\Testemail;
 
 use Magento\Backend\App\Action;
 use Magento\Framework\Controller\ResultFactory;
@@ -16,8 +16,8 @@ class Index extends Action
     /**
      * Authorization level of a basic admin session
      */
-    const ADMIN_RESOURCE = 'MagePal_GmailSmtpApp::magepal_gmailsmtpapp';
-    
+    const ADMIN_RESOURCE = 'Lof_SmtpApp::lof_smtpapp';
+
     /**
      * Index action
      *

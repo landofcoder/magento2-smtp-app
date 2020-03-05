@@ -1,8 +1,8 @@
 <?php
 /**
- * Copyright © MagePal LLC. All rights reserved.
+ * Copyright © Landofcoder LLC. All rights reserved.
  * See COPYING.txt for license details.
- * https://www.magepal.com | support@magepal.com
+ * https://www.landofcoder.com | support@landofcoder.com
  */
 ?>
 
@@ -99,7 +99,7 @@
 </style>
 <![endif]-->
 
-<?php /** @var $block MagePal\GmailSmtpApp\Block\Adminhtml\EmailTest  */ ?>
+<?php /** @var $block Lof\SmtpApp\Block\Adminhtml\EmailTest  */ ?>
 
 <?php foreach ($block->verify() as $result) : ?>
     <?php if ($result['has_error'] === false) : ?>
@@ -124,8 +124,8 @@
             <p><?php echo $block->formatErrorMsg($result['msg']) ?> </p>
         </div>
         <p>
-            Visit <a href="http://bit.ly/MpSmtpEr" target="_blank">www.magepal.com</a> to learn more about our
-            <a href="https://www.magepal.com/help/docs/smtp-magento/?utm_source=Custom%20SMTP&utm_medium=Premium%20Support%20Admin%20Error" target="_blank">Premium Support</a>.
+            Visit <a href="http://bit.ly/MpSmtpEr" target="_blank">www.landofcoder.com</a> to learn more about our
+            <a href="https://www.landofcoder.com/help/docs/smtp-magento/?utm_source=Custom%20SMTP&utm_medium=Premium%20Support%20Admin%20Error" target="_blank">Premium Support</a>.
         </p>
     <?php endif; ?>
 <?php endforeach; ?>
