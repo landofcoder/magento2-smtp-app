@@ -3,7 +3,7 @@
 <!--- Before adding a new issue, please check all closed and existing issues to make sure this is not a duplicate -->
 
 
-<!--- https://www.magepal.com/magento2/extensions/custom-smtp.html for fast Premium Support -->
+<!--- https://www.landofcoder.com/magento2/extensions/custom-smtp.html for fast Premium Support -->
 
 
 #### Magento version #:
@@ -35,5 +35,5 @@ other great extensions.
 Because of this, we cannot provide free support for our free extensions. 
 However, we do offer very affordable support options and/or training. 
 
-For more information visit www.magepal.com or email us at support@magepal.com.
+For more information visit www.landofcoder.com or email us at support@landofcoder.com.
 -->
